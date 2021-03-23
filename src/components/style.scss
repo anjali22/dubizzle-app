@@ -1,0 +1,78 @@
+$blockName: '.gist';
+
+
+#{$blockName} {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+  border: 1px solid rgba(50, 50, 93, 0.1);
+  padding: 5px;
+  margin: 5px;
+  
+  &__header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__sub-header {
+    flex-direction: row;
+  }
+
+  &__url {
+    justify-content: center;
+    font-weight: 400;
+  }
+
+  &__tag {
+    background: #FFAD33;
+    border-radius: 5px;
+    border: 3px transparent solid;
+    color: #262626;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px;
+    padding: 5px;
+    transition: all ease 0.3s;
+  }
+
+  &__forks {
+    display: flex;
+
+    &--image {
+      width: 30px;
+      height: 30px;
+      padding: 10px;
+    }
+
+    &--text {
+      font-size: 12px;
+    }
+  }
+
+  &__search-button {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 18px;
+    background: rgb(0,145,255);
+    border: 0;
+    color: #FFF;
+    cursor: pointer;
+    padding: 12px 35px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    outline: none;
+    transition: all ease 0.3s;
+  
+    &:hover {
+      background: #666699;
+    }
+  }
+
+  &__search-results {
+      justify-content: center;
+      align-items: center;
+  }
+}
